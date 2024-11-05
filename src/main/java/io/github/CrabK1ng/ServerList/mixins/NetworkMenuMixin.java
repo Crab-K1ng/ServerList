@@ -13,15 +13,13 @@ import finalforeach.cosmicreach.ui.VerticalAnchor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
-import java.util.Iterator;
-
 import static io.github.CrabK1ng.ServerList.ServerList.serverList;
 
 @Mixin(NetworkMenu.class)
 public class NetworkMenuMixin extends GameState implements InputProcessor {
 
     @Unique
-    Array<UIElement> serverButtons = new Array();
+    Array<UIElement> serverButtons = new Array<>();
     @Unique
     int topServerIdx;
     @Unique
@@ -46,7 +44,7 @@ public class NetworkMenuMixin extends GameState implements InputProcessor {
         float y = 100.0F;
 
         for(int i = 0; i < this.serverButtons.size; ++i) {
-            UIElement serverButton = (UIElement)this.serverButtons.get(i);
+            UIElement serverButton = this.serverButtons.get(i);
             if (i < this.topServerIdx) {
                 serverButton.hide();
             } else {
@@ -72,11 +70,8 @@ public class NetworkMenuMixin extends GameState implements InputProcessor {
 
         float x = 0.0F;
         float y = 100.0F;
-        Iterator<String> iterator = serverList.iterator();
 
-        while (iterator.hasNext()){
-
-            String address = iterator.next();
+        for (String address : serverList) {
 
             UIElement enterServerButton = new UIElement(x, y, 300.0F, 50.0F) {
                 @Override

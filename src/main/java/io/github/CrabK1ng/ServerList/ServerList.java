@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class ServerList implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("ServerList");
 
-	public static ArrayList<String> serverList = new ArrayList<String>();
+	public static ArrayList<String> serverList = new ArrayList<>();
 
 	public static String filePath = "server_ips.txt";
 
