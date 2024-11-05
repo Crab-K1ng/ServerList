@@ -21,7 +21,7 @@
         "sources": "https://github.com/Crab-K1ng/ServerList"
       },
 
-      "icon": "assets/example_mod/icon.png"
+      "icon": "assets/server_list/icon.png"
     },
 
     "entrypoints": {
