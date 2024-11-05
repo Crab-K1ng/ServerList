@@ -1,7 +1,7 @@
 # ServerList
 
 ## Mod requires
-- Cosmic Reach (0.3.4)
+- Cosmic Reach (0.3.6)
 - Cosmic Quilt (2.3.1)
 
 ## How to test/build
