@@ -8,8 +8,6 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.ArrayList;
 
-import static finalforeach.cosmicreach.GameAssetLoader.loadJson;
-
 public class ServerList implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("ServerList");
 

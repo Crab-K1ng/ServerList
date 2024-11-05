@@ -6,8 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "NetworkMenuMixin",
-    "ConnectingScreenMixin"
+    "ConnectingScreenMixin",
+    "NetworkMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1
